@@ -48,6 +48,7 @@ void ttfparser::checkVersion() {
     std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0')
               << static_cast<int>(byte) << ' ';
   }
+  std::cout << std::endl;
 }
 
 uint16_t ttfparser::numTable() {

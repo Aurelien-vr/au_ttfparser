@@ -23,5 +23,6 @@ public:
   uint32_t bytesToInt32(const std::vector<unsigned char> &bytes);
 
 private:
+  // Variable
   std::ifstream fontFile;
 };
