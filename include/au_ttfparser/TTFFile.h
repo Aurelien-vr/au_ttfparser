@@ -1,8 +1,10 @@
 #pragma once
 
 #include "au_ttfparser/ByteReader.h"
+#include "au_ttfparser/TableRecord.h"
 #include <cstdint>
 #include <string>
+
 class TTFFile {
 public:
   // Openning the file
@@ -23,4 +25,7 @@ private:
   // TTF file data
   uint32_t version;
   uint16_t numTable;
+
+  // Table
+  std::vector<TableRecord> tablesRecords;
 };
