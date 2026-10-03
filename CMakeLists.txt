@@ -7,9 +7,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_library(
     au_ttfparser
-    src/ttfparser.cpp
     src/TTFFile.cpp
     src/ByteReader.cpp
+    tests/test_main.cpp
 )
 
 target_include_directories(au_ttfparser
